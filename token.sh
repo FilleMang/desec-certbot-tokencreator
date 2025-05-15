@@ -104,7 +104,7 @@ if [ $? -ne 0 ]; then
   exit 1
 fi
 
-# Om domänen existerar och är kopplad till kontot, fortsätt med skriptet
+# If the domain exists and is linked to the account, proceed with the script
 echo "Creating a new profile with permissions for the domain $DOMANNAMN..."
 response_with_permissions=$(curl -X POST https://desec.io/api/v1/auth/tokens/$ID/policies/rrsets/ \
   --header "Authorization: Token $ADMINNYCKEL" \
