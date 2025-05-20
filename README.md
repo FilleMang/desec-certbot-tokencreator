@@ -4,6 +4,8 @@ This script automates the creation of a deSEC token with restricted privileges t
 
 It will create a token and a file for you to use with the certbot-plugin from desec: https://github.com/desec-io/certbot-dns-desec
 
+![image](https://github.com/user-attachments/assets/7396c4ed-99b0-4942-a6b5-7793e017beb5)
+
 
 ## Prerequisites
 
