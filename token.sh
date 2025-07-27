@@ -139,4 +139,4 @@ echo "Additionally, you can set up a cron job to renew the certificate automatic
 echo "sudo crontab -e"
 echo "Add and edit the following line to the crontab file to renew the certificate daily at 2 AM:"
 echo "0 2 * * * ENTER YOUR PATH TO CERTBOT HERE!/certbot renew --quiet --authenticator dns-desec --dns-desec-credentials /etc/letsencrypt/secrets/$DOMANNAMN.ini -d \"$DOMANNAMN\" -d \"*.$DOMANNAMN\" --post-hook \"systemctl reload nginx\""
-echo "This will ensure that your certificate is renewed automatically and your web server is reloaded to use the new certificate."
+echo "This will ensure that your certificate is renewed automatically and your web server is reloaded to use the new certificate. Modify if you don't use NGINX"
